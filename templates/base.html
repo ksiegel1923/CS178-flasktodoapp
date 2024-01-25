@@ -16,6 +16,8 @@
     <div style="margin-top: 50px" class="ui container">
       <h1 class="ui center aligned header">To Do App</h1>
 
+      <!-- Here is an example of me using the routes candidate concept -->
+      <!-- I am saying that when I submit my form I want to call the add route -->
       <form class="ui form" action="/add" method="post">
         <div class="field">
           <label>Todo Title</label>
@@ -36,6 +38,8 @@
         <span class="ui green label">Completed</span>
         {% endif %}
 
+        <!-- Here is an example of me using the variable routes candidate concept -->
+        <!-- If I click on the first button then I will call my update route and send my todo id so the function knows which todo to update -->
         <a class="ui blue button" href="/update/{{ todo.id }}">Update</a>
         <a class="ui red button" href="/delete/{{ todo.id }}">Delete</a>
       </div>
